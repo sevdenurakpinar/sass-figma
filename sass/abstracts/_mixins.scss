@@ -1,0 +1,64 @@
+@use "./variables" as v;
+
+@mixin flex-center($justify: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
+@mixin meter($width-size, $height-size) {
+  width: $width-size;
+  height: $height-size;
+}
+
+
+@mixin center-input {
+  width: 11rem;
+  height: 5rem;
+  border-radius: 1rem;
+  text-align: end;
+  border: solid var(--GRA-Blue2, #3984f4);
+ padding-right: 0.5rem;
+ color: #666;
+
+}
+
+@mixin big-input {
+  width: 20rem;
+  height: 5rem;
+  border-radius: 1rem;
+  text-align: start;
+  border: solid var(--GRA-Blue2, #3984f4);
+  padding-left: 1rem;
+
+
+}
+
+@mixin title-first {
+  font-family: v.$font-family;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+@mixin title-second {
+  font-family: v.$font-family;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 52px;
+}
+
+@mixin title-third {
+  font-family: v.$font-family;
+  font-size: 15px;
+}
+
+@mixin title-fourth {
+  font-family: v.$font-family;
+  font-size: 15px;
+  color: rgb(98, 98, 98);
+}

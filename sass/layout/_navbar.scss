@@ -1,0 +1,22 @@
+.page-start {
+  margin-left: 4rem;
+  column-gap: 3rem;
+  width: 100%;
+  padding: 2rem;
+  
+   
+}
+ul {
+  column-gap: 1.5rem;
+}
+
+.btn-navbar {
+  display: flex;
+  gap: 20px;
+}
+
+
+@media (max-width:992px) {
+ .btn-navbar{ display: none; 
+ }
+}

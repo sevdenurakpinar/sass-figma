@@ -1,0 +1,21 @@
+.advanced {
+  top: 162rem;
+  height: 35rem;
+  width: 90rem !important;
+  margin-left: 2rem;
+  margin-top: 10rem;
+  background: url(../../../images/Group\ 38.png);
+  width: 100%;
+  background-size: cover; /* Görüntüyü konteynırı tamamen kaplayacak şekilde ayarlar */
+  background-position: center;
+  border-radius: 40px;
+  padding: 2rem;
+  .advanced-big {
+    width: 40%;
+    right: 4rem;
+  top: 175rem;
+    position: absolute;
+   
+  }
+
+}

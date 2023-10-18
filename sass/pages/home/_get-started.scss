@@ -1,0 +1,17 @@
+@use "../../abstracts/mixins";
+
+@use "../../abstracts/variables";
+
+.get-started {
+  overflow: hidden;
+  margin-top: 10rem;
+  object-fit: contain;
+  background: url(../../../images/Group\ 38.png);
+  @include mixins.meter(100%, 36rem);
+  @include mixins.flex-center;
+
+  .get-started-content {
+    text-align: start;
+    padding-left: 6rem;
+  }
+}

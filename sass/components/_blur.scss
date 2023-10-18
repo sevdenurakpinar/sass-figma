@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+#cornerBlur {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  @include m.meter(200px, 200px);
+  background-color: rgb(28, 80, 149); // Pembe arkaplan rengi
+  filter: blur(200px); // Blur efekti uygulama//
+}
+
+#cornerBlurTwo {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  @include m.meter(200px, 200px);
+  background-color: rgb(149, 28, 113); // Pembe arkaplan rengi
+  filter: blur(200px); // Blur efekti uygulama//
+}
+
+#cornerBlurThree {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  @include m.meter(200px, 200px);
+  background-color: rgb(149, 28, 113); // Pembe arkaplan rengi
+  filter: blur(300px); // Blur efekti uygulama//
+}

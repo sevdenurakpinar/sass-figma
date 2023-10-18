@@ -1,0 +1,25 @@
+@use "../../abstracts/mixins";
+
+@use "../../abstracts/variables";
+
+.buy-image {
+  margin-top: 30rem;
+  background-color: #ffffff !important;
+}
+
+.bank {
+  width: 30rem;
+  position:absolute;
+  top: 77rem;
+  right: 8rem;
+}
+
+.page-input-two select {
+  @include mixins.center-input;
+
+}
+.page-input-one input {
+  @include mixins.big-input;
+ 
+}
+

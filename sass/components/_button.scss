@@ -1,0 +1,59 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.btn-outline-blue {
+  background-color: transparent;
+  color: v.$color-blue;
+  border: 1px solid v.$color-blue;
+  border-radius: v.$btn-radius;
+  width: 11rem !important;
+  height: 3.5rem !important;
+}
+
+.btn-full {
+  background: linear-gradient(v.$color-gradient-blue);
+  color: v.$color-white;
+  border-radius: v.$btn-radius;
+  width: 7rem !important;
+  height: 3rem !important;
+  font-family: v.$font-family;
+}
+
+.btn-gradient {
+  border-radius: v.$btn-radius;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(v.$color-gradient-blue) border-box;
+  border: 1px solid transparent;
+  
+}
+.button-navbar {
+  width: 7rem !important;
+  height: 3rem !important;
+}
+.btn-header {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  @include m.meter(125px, 60px);
+}
+.buy-btn {
+  width: 63% !important;
+  margin-top: 20px;
+}
+
+.btn-footer{
+position: absolute;
+right: 5rem;
+width: 4rem;
+height: 3.3rem;
+bottom: 17.6rem;
+background-color: blue;
+
+}
+.header{
+  .btn-gradient{
+    width: 11rem;
+  }
+ }

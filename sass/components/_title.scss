@@ -1,0 +1,76 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.second-title {
+  background: linear-gradient(
+    169deg,
+    #3984f4 -6.01%,
+    #0cd3ff 36.87%,
+    #2f7cf0 78.04%,
+    #0e65e8 103.77%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Poppins;
+
+  font-style: normal;
+
+  line-height: 82px;
+}
+
+.first-title {
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: linear-gradient(137deg, #468ef9 -12.5%, #0c66ee 107.5%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  @include m.title-first;
+}
+h2 {
+  @include m.title-second;
+}
+h3 {
+  @include m.title-third;
+}
+
+h4 {
+  @include m.title-fourth;
+}
+
+.get-started-text h3 {
+  object-fit: contain;
+  @include m.flex-center;
+}
+
+.accordion {
+  .accordion-text {
+    span {
+      background: linear-gradient(
+        169deg,
+        #3984f4 -6.01%,
+        #0cd3ff 36.87%,
+        #2f7cf0 78.04%,
+        #0e65e8 103.77%
+      );
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Poppins;
+      font-size: 25px;
+      font-style: normal;
+
+      line-height: 20px;
+    }
+   
+  }
+}
